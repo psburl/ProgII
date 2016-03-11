@@ -1,0 +1,62 @@
+/*Folha de estilo mestre com as configurações padrões entre as páginas*/
+/*Formatação Inicial do rodapé*/
+@font-face{
+	font-family: "Garamond";
+	src:url("fonts/AppleGaramond.ttf");
+}
+.Garamond{
+	font-family: "Garamond";
+}
+
+body{
+	font-family: Garamond;
+	background: url("img/background.jpg");
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: 100% 100%
+}
+
+#footer{
+	width: 98%;
+	height: 40px;
+	bottom: 0;
+	text-align: center;
+	position: absolute;
+	position: fixed;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	margin-left: -8px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #08648e;
+	background: url("img/footer.jpg");
+	opacity: 0.7;
+	width: 102%;
+	max-height: initial;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	text-align: center;
+}
+
+li a {
+	display: inline-block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 11pt;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #4191b6;
+	border-bottom-style: solid;
+	margin: 0;
+	padding-bottom: 0.1px;
+	font-weight: bold;
+}

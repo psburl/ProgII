@@ -1,0 +1,118 @@
+@font-face{
+	font-family: "GaramondLight";
+	src:url("fonts/AppleGaramond-Light.ttf");
+}
+.Garamond{font-family: "Garamond";}
+
+#box{
+	width: 800px;
+	height: 600px;
+	float:left;
+}
+.logo img{
+	max-width:300px;
+    max-height:200px;
+    margin-left: 40px;
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+}
+
+#formBox{
+	width: 350px;
+	height: 500px;
+	float: right;
+	background: url("img/formBox.jpg");
+	opacity: 0.9;
+	margin-top: 2.5%;
+	margin-right: 2.5%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 5px 5px 5px #08648e;
+}
+	
+
+.userInput{
+	font-family: GaramondLight;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width : 310px;
+	font-size:16pt;
+	border-style:none;
+	opacity: 100%;
+}
+
+.signUpInputs{
+	font-family: GaramondLight;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width : 310px;
+	font-size:12pt;
+	border-style:none;
+
+}
+.signUpMidInputs{
+	font-family: GaramondLight;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width : 150px;
+	font-size:12pt;
+	border-style:none;
+	margin-top: 30px;
+}
+
+.loginButtons{
+	font-family: GaramondLight;
+	width:310px;
+	height: 30px;
+	float: center;
+	margin-top: 10px;
+	border: 0.5px;
+	border-style: solid;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	font-size: 11pt;
+	font-weight: bold;
+	background-color: #0088cc;
+	opacity: 1.0;
+}
+
+.loginLinks{
+	font-family: GaramondLight;
+	font-size: 9pt;
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+.loginLinks:link {text-decoration: none;}
+.loginLinks:hover{text-decoration: underline;}
+
+
+#form{
+	margin-top: 10%;
+	margin-left:5%; 
+}
+
+.inputLabel{
+	margin-left:0%;
+}
+
+.loginCaption{
+	text-align: center;
+}
+
+table{
+	font-size: 14pt;
+	font-weight: bold;
+}
+

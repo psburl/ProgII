@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="pt-BR">
+	<head>
+		<title>Cadastro</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
+		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="fieldsValidate.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/SignUp.css">
+		<link rel="stylesheet" type="text/css" href="CSS/master.css">
+
+	</head>
+
+	<body>
+		<div id="SignUpBox">
+			
+			<!--Criação de mini-formulario para Cadastro-->
+
+			<form name = "frmSignUp" method = "post"  onsubmit="validate(); return false;" action = "SignUp.php">
+				<table>
+					<tr>
+						<td class = "SignUpLabels">Nome:</td>
+					</tr>
+					<tr>
+						<td> 
+							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+						<td class = "SignUpLabels">Sobrenome:</td>
+					</tr>
+					<tr>	
+						<td>
+							<input id = "lastname" name = "lastname" placeholder="Sobrenome" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class = "SignUpLabels">Email:</td>
+					</tr>
+					<tr>
+						<td>
+							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class = "SignUpLabels">Senha:</td>
+					</tr>
+					<tr>
+						<td> 
+							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="senha" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class = "SignUpLabels">Confirmação de Senha:</td>
+					</tr>
+					<tr>
+						<td>
+							<input id = "passwordConfirm" name = "passwordConfirm" type = "password" maxlength = "16" placeholder="confirmação de senha" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id = "LoginButton" name = "btnSignUp" type="submit" value="Cadastre-se">
+						</td>
+					</tr>					
+				</table>
+			</form>
+			
+			<!--Logotipo dentro do cadastro-->
+			
+			<div id = "Logo">
+				<img src = "img/logotipo.png">						
+			</div>
+		</div>
+
+		<!--Rodapé-->
+
+		<div id="footer">
+			<nav id="subFooter">
+				<ul>
+					<li><a href="#P">Politicas</a></li>
+					<li><a href="#H">Ajuda</a></li>
+					<li><a href="#WD">Web Designer</a></li>
+					<li><a href="#T">Termos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

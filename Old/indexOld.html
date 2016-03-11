@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="pt-BR">
+	<head>
+		<title>It'sMyLife</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
+		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/master.css">
+		<link rel="stylesheet" type="text/css" href="CSS/indexOld.css">
+		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
+
+	</head>
+
+	<body> 
+
+		<div id="box">
+			<div class="logo"> 
+				<img src = "CSS/img/logotipo.png">
+			</div>
+			<div id="information"></div>
+		</div>
+		<div id="formBox">
+
+			<!--Criação de mini-formulario para login-->
+			<table id="form">
+				<form method="post" action = "authentic.php">
+					<tr><td colspan = "2" class = "tdClass" align="center" class = "loginCaption"> Realize seu login!</td></tr>
+					<tr>
+						<td colspan = "2" class = "tdClass" class= "inputLabel">Login:</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input type="email" name="email" placeholder="nome@provedor.com" class = "userInput">
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2" class = "tdClass"class= "inputLabel">Senha:</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input type="password" maxlength = "16" name="password" placeholder="Digite sua senha" class = "userInput">
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2" class = "tdClass">
+							<a class = "loginLinks" href = "#" name = "btnForgotPasswd">Esqueci a senha</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2" class = "tdClass">
+							<input type="submit" value="Entrar" name = "btnLogin" class = "loginButtons">
+						</td>
+					</tr>
+				</form>
+				
+				<form method = "post" action = "SignUp.php">
+					<tr>
+						<td><input type= "text" name = 'name' placeholder="Nome" class = "signUpMidInputs"></input></td>
+						<td><input type= "text" name = 'lastName' placeholder="Sobrenome" class = "signUpMidInputs"></input></td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input type = "email" name = 'email' placeholder="email@provedor.com" class = "signUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2" >
+							<input type = "password" maxlength = "16" name = 'password' placeholder="senha" class = "signUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input type = "password" maxlength = "16" name = 'passwordCofirm' placeholder="confirmação de senha" class = "signUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2" class = "tdClass">
+							<input type="submit" value="Cadastre-se" name = "btnSignUp" class = "loginButtons">
+						</td>
+					</tr>
+				</form>
+
+				<!--Criação do formulário para cadastro de usuários no site-->
+			</table>
+
+		</div>
+		
+		<div id="footer">
+			<nav id="subFooter">
+				<ul>
+					<li><a href="#P">Politicas</a></li>
+					<li><a href="#H">Ajuda</a></li>
+					<li><a href="#WD">Web Designer</a></li>
+					<li><a href="#T">Termos</a></li>
+					<li><a href="SignUp.html" data-transition="slide">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

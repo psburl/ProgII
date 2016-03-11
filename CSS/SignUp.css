@@ -1,0 +1,77 @@
+@font-face{
+	font-family: "GaramondLight";
+	src:url("fonts/AppleGaramond-light.ttf");
+}
+
+.Garamond{ font-family: "GaramondLight"; }
+
+table{
+	font-size: 14pt;
+	font-weight: bold;
+	margin: auto;
+}
+
+#SignUpBox{
+	font-family: "GaramondLight";
+	width: 550px;
+	height: 450px;
+	margin: auto;
+	margin-top: 30px;
+	float: center;
+	text-align: center;
+	margin-bottom: 60px;
+	background: url("img/formBox.jpg");
+	opacity: 0.9;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 5px 5px 5px #08648e;
+	padding-top: 15px;
+}
+
+.SignUpLabels{
+	float:left;
+	padding-left: 5px;
+}
+
+.SignUpInputs{
+	font-family: "GaramondLight";
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	float:center;
+	width : 500px;
+	font-size:16pt;
+	border-style:none;
+	margin-top: 5px;
+}
+
+#Logo img{
+	max-width:140px;
+    max-height:200px;
+    margin-left: 40px;
+    margin-top: -80px;
+    width: auto;
+    float: left;
+    height: auto;
+}
+
+#LoginButton{
+	font-family: "GaramondLight";
+	width:300px;
+	height: 30px;
+	margin-top: 60px;
+	border: 0.5px;
+	border-style: solid;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	float:right;
+	font-size: 11pt;
+	font-weight: bold;
+	background-color: #0099CC;
+}
+

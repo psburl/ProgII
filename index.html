@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="pt-BR">
+	<head>
+		<title>It'sMyLife</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
+		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/master.css">
+		<link rel="stylesheet" type="text/css" href="CSS/index.css">
+		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
+	</head>
+
+	<body> 
+
+	<!--Barra de Login-->
+
+		<div id = "loginBar">
+			<form id = "frmLogin" method="post" action = "authentic.php">
+				<label>Login: </label>
+				<input type="email" name="lgEmail" placeholder="nome@provedor.com" class = "LoginInputs"></td>
+				<label>Senha: </label>
+				<input type="password" maxlength = "16" name="lgPassword" placeholder="Digite sua senha" class = "LoginInputs"></td>
+				<input type="submit" value="Entrar" id = "btnLogin"></td>
+			</form>
+		</div>
+			
+
+		<div id = "SignUpBar">
+			<form method = "post" action = "SignUp.php">
+				<table>
+					
+					<!--Criação de mini-formulario para Cadastro-->
+
+					<tr></tr>
+						<td class = "SignUpLabels">Nome:</td>
+						<td class = "SignUpLabels">Sobrenome:</td>
+					</tr>
+					<tr>
+						<td>
+							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpMidInputs"></input>
+						</td>
+						<td>
+							<input id = "lastName" name = "lastName" type= "text" placeholder = "Sobrenome" class = "SignUpMidInputs"></input>
+						</td>
+					</tr>	
+					<tr>
+						<td class = "SignUpLabels">Email:</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class = "SignUpLabels">Senha:</td>
+					</tr>
+					<tr>
+						<td colspan = "2" >
+							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="Senha" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class = "SignUpLabels">Confirmação de Senha:</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input id = "passwordCofirm" name = 'passwordCofirm' type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs"></input>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "2">
+							<input id = "btnSignUp" name = "btnSignUp" type="submit" value="Cadastre-se">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<!--Logotipo dentro do cadastro-->
+		
+		<div id="box">
+			<div class="Logo"> 
+				<img src = "CSS/img/logotipo.png">
+			</div>
+			<div id="information"></div>
+		</div>	
+
+		<!--Rodapé-->
+	
+		<div id="footer">
+			<nav id="subFooter">
+				<ul>
+					<li><a href="#P">Politicas</a></li>
+					<li><a href="#H">Ajuda</a></li>
+					<li><a href="#WD">Web Designer</a></li>
+					<li><a href="#T">Termos</a></li>
+					<li><a href="SignUp.html" data-transition="slide">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
