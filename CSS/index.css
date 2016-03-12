@@ -10,7 +10,6 @@
 	height: 80px;
 	margin-left: -10px;
 	margin-top: -10px;
-	margin-right: -10px;
 	text-align: right;
 	position: absolute;
 	position: fixed;
@@ -19,9 +18,9 @@
 	float: right;
 	width: 100%;
 	height: 40px;
-	background: url("img/footer.jpg");
-	opacity: 0.9;
-	box-shadow: 5px 5px 5px #08648e;
+	margin-right: -2px;
+	background-color: #2d4040;
+	opacity: 0.8;
 }
 
 .LoginInputs{
@@ -38,7 +37,7 @@
 
 #btnLogin{
 	margin-top: 10px;
-	background-color: #0088cc;
+	background-color: #287bbc;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -64,7 +63,7 @@
 	width: 350px;
 	height: auto;
 	float: right;
-	background: url("img/formBox.jpg");
+	background-color: #287bbc;
 	opacity: 0.9;
 	margin-top: 10%;
 	margin-right: 2.5%;

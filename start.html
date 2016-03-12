@@ -7,7 +7,6 @@
 		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
 		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
 		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="CSS/master.css">
 		<link rel="stylesheet" type="text/css" href="CSS/start.css">
 		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
 	</head>
@@ -20,16 +19,18 @@
 				<div id = "FriendPanel"></div>
 			</div>
 			<div id = "FeedArea">
-				<div id = "TypefulTextArea"></div>
+				<div id = "TypefulTextArea">
+					<textarea id = "FeedTextArea"></textarea> 
+					<input type="submit" value="Fixar" id = "btnPin">
+				</div>
 				<div id = "PostFeed"></div>
 			</div>
 		</div>
 		<div id = "UserStorage"></div>
 		<div id = "loginBar">
 			<form id = "frmLogin" method="post" action = "authentic.php">
-
+				<a type="submit" id = "btnLogout"></a>
 			</form>
 		</div>
-		
 	</body>
 </html>
