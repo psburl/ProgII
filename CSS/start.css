@@ -21,6 +21,17 @@ body{
 	position: fixed;
 }
 
+#logo{
+	background-repeat: none;
+	background:url("img/logotipoWhite.png");
+	background-size: 200px;
+	width: 200px;
+	height: 100px;
+	margin-top: -45px;
+	float: left;
+	margin-left: 50px;
+}
+
 #btnLogout{
 	background-color: black;
 	background: url("img/logout.png");
