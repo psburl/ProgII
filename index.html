@@ -19,13 +19,21 @@
 		<div id = "loginBar">
 			<form id = "frmLogin" method="post" action = "authentic.php">
 				<label>Login: </label>
-				<input type="email" name="lgEmail" placeholder="nome@provedor.com" class = "LoginInputs"></td>
+				<input type="email" name="lgEmail" placeholder="nome@provedor.com" class = "LoginInputs">
 				<label>Senha: </label>
-				<input type="password" maxlength = "16" name="lgPassword" placeholder="Digite sua senha" class = "LoginInputs"></td>
-				<input type="submit" value="Entrar" id = "btnLogin"></td>
+				<input type="password" maxlength = "16" name="lgPassword" placeholder="Digite sua senha" class = "LoginInputs">
+				<input type="submit" value="Entrar" id = "btnLogin">
 			</form>
 		</div>
-			
+		
+		<div>
+			<form id = "Article">
+				<article  id = "ArticleMain">
+					<h4>Gerencie, Armazene e Compartilhe arquivos pessoais ou corporativos.
+					<br><br>Agende Tarefas <br><br>Mantenha Contatos <br><br>Sincronize Documentos.</h4>
+				</article>
+			</form>
+		</div>
 
 		<div id = "SignUpBar">
 			<form method = "post" action = "SignUp.php">
@@ -33,40 +41,40 @@
 					
 					<!--Criação de mini-formulario para Cadastro-->
 
-					<tr></tr>
+					<tr>
 						<td class = "SignUpLabels">Nome:</td>
 						<td class = "SignUpLabels">Sobrenome:</td>
 					</tr>
 					<tr>
 						<td>
-							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpMidInputs"></input>
+							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpMidInputs">
 						</td>
 						<td>
-							<input id = "lastName" name = "lastName" type= "text" placeholder = "Sobrenome" class = "SignUpMidInputs"></input>
+							<input id = "lastName" name = "lastName" type= "text" placeholder = "Sobrenome" class = "SignUpMidInputs">
 						</td>
 					</tr>	
 					<tr>
-						<td class = "SignUpLabels">Email:</td>
+						<td colspan = "2" class = "SignUpLabels">Email:</td>
 					</tr>
 					<tr>
 						<td colspan = "2">
-							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs"></input>
+							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs">
 						</td>
 					</tr>
 					<tr>
-						<td class = "SignUpLabels">Senha:</td>
+						<td colspan = "2" class = "SignUpLabels">Senha:</td>
 					</tr>
 					<tr>
 						<td colspan = "2" >
-							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="Senha" class = "SignUpInputs"></input>
+							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="Senha" class = "SignUpInputs">
 						</td>
 					</tr>
 					<tr>
-						<td class = "SignUpLabels">Confirmação de Senha:</td>
+						<td colspan = "2" class = "SignUpLabels">Confirmação de Senha:</td>
 					</tr>
 					<tr>
 						<td colspan = "2">
-							<input id = "passwordCofirm" name = 'passwordCofirm' type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs"></input>
+							<input id = "passwordCofirm" name = 'passwordCofirm' type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs">
 						</td>
 					</tr>
 					<tr>
@@ -82,7 +90,7 @@
 		
 		<div id="box">
 			<div class="Logo"> 
-				<img src = "CSS/img/logotipo.png">
+				<img alt = "erro" src = "CSS/img/logotipo.png">
 			</div>
 			<div id="information"></div>
 		</div>	

@@ -32,10 +32,25 @@ table{
 
 .SignUpLabels{
 	float:left;
-	padding-left: 5px;
 }
 
-.SignUpInputs{
+#frmSignUp input[type=text].error{
+    border: solid 1px #900; 
+
+   
+}
+
+label.error {
+    font-size: 10px;
+    color: #900;
+    float: right; 
+    margin-top: -45px;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+
+.required{
 	font-family: "GaramondLight";
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -46,6 +61,7 @@ table{
 	font-size:16pt;
 	border-style:none;
 	margin-top: 5px;
+
 }
 
 #Logo img{

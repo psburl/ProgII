@@ -1,10 +1,10 @@
 <?php 
 	function SqlExec($Query){
-
 		if(file_exists("DB_Connect.php")){
 			include("DB_Connect.php");
-		}
 
+		
+		}
 		else{
 			$errorMsg = "<center><font color='#FF0000'><b>";
 			$errorMsg.= "Não foi possível conectar ao banco de Dados<br>";

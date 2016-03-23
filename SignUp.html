@@ -6,10 +6,11 @@
 		<meta charset="utf-8"/>
 		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
 		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
-		<script type="text/javascript" src="fieldsValidate.js"></script>
+		<script type="text/javascript" src="JS/fieldsValidate.js"></script>
+		<script type="text/javascript" src="JS/jquery.js"></script>
+		<script type="text/javascript" src="JS/jquery.validate.js"></script>
 		<link rel="stylesheet" type="text/css" href="CSS/SignUp.css">
 		<link rel="stylesheet" type="text/css" href="CSS/master.css">
-
 	</head>
 
 	<body>
@@ -17,21 +18,22 @@
 			
 			<!--Criação de mini-formulario para Cadastro-->
 
-			<form name = "frmSignUp" method = "post" action = "PHP/SignUp.php">
+			<form id = "frmSignUp" method = "post" onsubmit="validate(); return false;" action = "#PHP/SignUp.php">
 				<table>
 					<tr>
 						<td class = "SignUpLabels">Nome:</td>
 					</tr>
 					<tr>
 						<td> 
-							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpInputs"></input>
+							<input class="required" id = "name" name = "name" type= "text" placeholder="Nome" >
 						</td>
 					</tr>
+					<tr>
 						<td class = "SignUpLabels">Sobrenome:</td>
 					</tr>
 					<tr>	
 						<td>
-							<input id = "lastname" name = "lastname" placeholder="Sobrenome" class = "SignUpInputs"></input>
+							<input class="required" id = "lastname" name = "lastname" placeholder="Sobrenome" >
 						</td>
 					</tr>
 					<tr>
@@ -39,7 +41,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs"></input>
+							<input class="required" id = "email" name = "email" type = "email" placeholder="email@provedor.com" >
 						</td>
 					</tr>
 					<tr>
@@ -47,7 +49,7 @@
 					</tr>
 					<tr>
 						<td> 
-							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="senha" class = "SignUpInputs"></input>
+							<input class="required" id = "password" name = "password" type = "password" maxlength = "16" placeholder="senha" >
 						</td>
 					</tr>
 					<tr>
@@ -55,7 +57,7 @@
 					</tr>
 					<tr>
 						<td>
-							<input id = "passwordConfirm" name = "passwordConfirm" type = "password" maxlength = "16" placeholder="confirmação de senha" class = "SignUpInputs"></input>
+							<input class="required" id = "passwordConfirm" name = "passwordConfirm" type = "password" maxlength = "16" placeholder="confirmação de senha" >
 						</td>
 					</tr>
 					<tr>
@@ -69,7 +71,7 @@
 			<!--Logotipo dentro do cadastro-->
 			
 			<div id = "Logo">
-				<img src = "img/logotipo.png">						
+				<img alt = "erro" src = "img/logotipo.png">						
 			</div>
 		</div>
 
@@ -85,5 +87,6 @@
 				</ul>
 			</nav>
 		</div>
+
 	</body>
 </html>
