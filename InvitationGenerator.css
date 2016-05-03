@@ -1,0 +1,36 @@
+@font-face{
+	font-family: "GaramondLight";
+	src:url("fonts/AppleGaramond-Light.ttf");
+}
+#fields{
+	width: 100%;
+	float: center;
+	margin-left: 40%;
+	margin-top: 5%;
+	font-family: GaramondLight;
+	font-size: 16pt;
+}
+
+.labels{
+	width: 60px;
+	float: left;
+}
+
+.inputs{
+	float: left;
+	font-family: GaramondLight;
+	font-size: 16pt;
+}
+
+.img{
+	height: 30px;
+	width: 40px;
+	float: left;
+	font-family: GaramondLight;
+	font-size: 16pt;
+}
+#btnGenerate{
+	float: right;
+	font-family: GaramondLight;
+	font-size: 16pt;
+}

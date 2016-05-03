@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang = "pt-br">
+	<head>
+		<title>My Profile</title>
+		<meta charset = "utf-8"/>
+		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
+		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/trabalhos.css">
+		<link rel="stylesheet" type="text/css" href="CSS/master.css">
+		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
+	</head>
+
+	<body>
+		<div id = "SiteArea">
+			<div id = "LeftPanel">
+				<div id = "ThumbPic">
+				<div id = "UserPicture"></div>
+				</div>
+				<div id = "lblMenu">Menu</div>
+				<div id = "OtherPages">
+					<a href = "index.htm" class = "OtherPagesLinks">Perfil</a>
+					<a href = "trabalhos.htm" class = "OtherPagesLinks">Trabalhos</a>
+					<a href = "interesses.htm" class = "OtherPagesLinks">Interesses</a>
+					<a href = "contato.htm" class = "OtherPagesLinks">Contato</a>
+				</div>
+			</div>
+			<div id = "Works">
+				<div id = "MyWorks">
+					<p class = "stepWorks">Trabalho de Programação I</p>
+					<article class = "eachWork">
+						Trabalho final da disciplina de Programação I realizado em
+						2015.2 pela UFFS.<br>
+						Jogo desenvolvido em Java, com auxílio da biblioteca JPlay.
+						<div class = "img" id= "progIimg"></div>
+						<a class = "gitlink" href = "https://github.com/psburl/Graduacao/tree/master/Algoritmos/ZazasteroidesDaUFefes"> GitHub</a>
+					</article>
+					<p class = "stepWorks">Zazasteróides da UFefes</p>
+					<article class = "eachWork" >
+						Trabalho final da disciplina de Algoritmos de Programação realizado em
+						2015.1 pela UFFS.<br>
+						Jogo desenvolvido em C, com auxílio da biblioteca Allegro.
+						<div class = "img" id = "algimg"></div>
+						<a class = "gitlink" href = "https://github.com/psburl/Graduacao/tree/master/ProgramacaoI/workspace/FinalWorkProg1"> GitHub</a>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div id = "UserStorage">
+			<a href = "https://www.facebook.com/wsbrl" class = "socialLink">
+				<img  class ="socialIcons" src ="CSS/img/facebook.png"/>
+			</a>
+			<a href = "https://www.linkedin.com/in/wesleyburlani" class = "socialLink">
+				<img  class ="socialIcons" src ="CSS/img/linkedin.png"/>
+			</a>
+			<a href = "https://github.com/psburl" class = "socialLink">
+				<img  class ="socialIcons" src ="CSS/img/GitHub.png"/>
+			</a>
+			<a href = "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8454193J2" class = "socialLink">
+				<img  class ="socialIcons" src ="CSS/img/lattes.png"/>
+			</a>
+			<a href = "https://plus.google.com/u/0/112167803553720900734/posts" class = "socialLink">
+				<img  class ="socialIcons" src ="CSS/img/google+.png"/>
+			</a>
+		</div>
+		<div id = "loginBar">
+			<form id = "frmLogin" method="post" action = "authentic.php">
+				<text id = "logo">Wesley Burlani</text>
+			</form>
+		</div>
+	</body>
+</html>

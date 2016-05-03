@@ -1,0 +1,87 @@
+@font-face{
+	font-family: "Garamond";
+	src:url("fonts/AppleGaramond.ttf");
+}
+.Garamond{
+	font-family: "Garamond";
+}
+
+body{
+	background-color: #fafafa;
+}
+
+.img{
+	
+	overflow: hidden;
+	background-size: 550px 400px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 550px;
+	height: 400px;
+	background-position: relative;
+}
+
+#algimg{
+	background:url("img/zazasteroidedaufefes.png");
+}
+
+#progIimg{
+	background:url("img/ProgI.jpg");
+}
+#Works{
+	height:auto;
+	width:700px;
+	margin-top: -570px;
+	margin-left: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: center;
+}
+
+#MyWorks{
+	min-height: 50px;
+	height: auto;
+	width:660px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: center;
+
+
+}
+.eachWork{
+	margin-top: -10px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+	background-color: white;
+	font-family: Garamond;	
+	font-size: 15pt;
+}
+
+.stepWorks{
+	font-size: 18pt;
+	font-family: Garamond;
+}
+
+.gitlink{
+	display: block;
+	color: #287bbc;
+	text-decoration: none;
+	width: auto;
+	padding-top: 10px;
+	font-size: 16pt;
+	text-align: right;
+}
+
+.gitlink:hover {
+	text-decoration: underline;
+}

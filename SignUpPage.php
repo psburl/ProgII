@@ -1,4 +1,4 @@
-<!doctype html>
+
 
 <html lang="pt-BR">
 	<head>
@@ -25,7 +25,10 @@
 					</tr>
 					<tr>
 						<td> 
-							<input class="required" id = "name" name = "name" type= "text" placeholder="Nome" >
+							<input class="required" id = "name" name = "name" type= "text" placeholder="Nome" value = 
+							<?php
+								echo $_POST['name'];
+							?>>
 						</td>
 					</tr>
 					<tr>
@@ -33,7 +36,10 @@
 					</tr>
 					<tr>	
 						<td>
-							<input class="required" id = "lastname" name = "lastname" placeholder="Sobrenome" >
+							<input class="required" id = "lastname" name = "lastname" placeholder="Sobrenome" 
+							value = <?php
+								echo $_POST['lastName'];
+							?>>
 						</td>
 					</tr>
 					<tr>
@@ -41,7 +47,10 @@
 					</tr>
 					<tr>
 						<td>
-							<input class="required" id = "email" name = "email" type = "email" placeholder="email@provedor.com" >
+							<input class="required" id = "email" name = "email" type = "email" placeholder="email@provedor.com" value = 
+							<?php
+								echo $_POST['email'];
+							?>>
 						</td>
 					</tr>
 					<tr>
@@ -49,7 +58,10 @@
 					</tr>
 					<tr>
 						<td> 
-							<input class="required" id = "password" name = "password" type = "password" maxlength = "16" placeholder="senha" >
+							<input class="required" id = "password" name = "password" type = "password" maxlength = "16" placeholder="senha" value = 
+							<?php
+								echo $_POST['password'];
+							?>>
 						</td>
 					</tr>
 					<tr>
@@ -57,7 +69,10 @@
 					</tr>
 					<tr>
 						<td>
-							<input class="required" id = "passwordConfirm" name = "passwordConfirm" type = "password" maxlength = "16" placeholder="confirmação de senha" >
+							<input class="required" id = "passwordConfirm" name = "passwordConfirm" type = "password" maxlength = "16" placeholder="confirmação de senha" value = 
+							<?php
+								echo $_POST['passwordConf'];
+							?>>
 						</td>
 					</tr>
 					<tr>

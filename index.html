@@ -11,13 +11,13 @@
 		<link rel="stylesheet" type="text/css" href="CSS/index.css">
 		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
 	</head>
-
+ 
 	<body> 
 
 	<!--Barra de Login-->
 
 		<div id = "loginBar">
-			<form id = "frmLogin" method="post" action = "authentic.php">
+			<form id = "frmLogin" method="post" action = "PHP/LoginAuthenticate.php">
 				<label>Login: </label>
 				<input type="email" name="lgEmail" placeholder="nome@provedor.com" class = "LoginInputs">
 				<label>Senha: </label>
@@ -36,7 +36,7 @@
 		</div>
 
 		<div id = "SignUpBar">
-			<form method = "post" action = "SignUp.php">
+			<form method = "post" action = "SignUpPage.php">
 				<table>
 					
 					<!--Criação de mini-formulario para Cadastro-->
@@ -73,10 +73,11 @@
 						<td colspan = "2" class = "SignUpLabels">Confirmação de Senha:</td>
 					</tr>
 					<tr>
-						<td colspan = "2">
-							<input id = "passwordCofirm" name = 'passwordCofirm' type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs">
+						<td colspan = "2" >
+							<input id = "passwordConf" name = "passwordConf" type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs">
 						</td>
 					</tr>
+					
 					<tr>
 						<td colspan = "2">
 							<input id = "btnSignUp" name = "btnSignUp" type="submit" value="Cadastre-se">
@@ -102,7 +103,7 @@
 				<ul>
 					<li><a href="#P">Politicas</a></li>
 					<li><a href="#H">Ajuda</a></li>
-					<li><a href="#WD">Web Designer</a></li>
+					<li><a href="TrabalhoI/index.htm">Web Designer</a></li>
 					<li><a href="#T">Termos</a></li>
 					<li><a href="SignUp.html" data-transition="slide">Cadastre-se</a></li>
 				</ul>

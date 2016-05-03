@@ -12,9 +12,9 @@ table{
 }
 
 #SignUpBox{
-	font-family: "GaramondLight";
+	font-family: Garamond;
 	width: 550px;
-	height: 450px;
+	height: 1000px;
 	margin: auto;
 	margin-top: 30px;
 	float: center;
@@ -30,8 +30,19 @@ table{
 	padding-top: 15px;
 }
 
-.SignUpLabels{
+.SignUpMidLabels{
+	font-family: Garamond;
+	font-size:14pt;
 	float:left;
+	width: 80%;
+	margin-left: -180px;
+}
+
+.SignUpLabels{
+	font-family: Garamond;
+	font-size:14pt;
+	float:left;
+
 }
 
 #frmSignUp input[type=text].error{
@@ -51,7 +62,7 @@ label.error {
 
 
 .required{
-	font-family: "GaramondLight";
+	font-family: Garamond;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -75,7 +86,7 @@ label.error {
 }
 
 #LoginButton{
-	font-family: "GaramondLight";
+	font-family: Garamond;
 	width:300px;
 	height: 30px;
 	margin-top: 60px;

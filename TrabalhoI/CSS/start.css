@@ -1,0 +1,95 @@
+@font-face{
+	font-family: "Garamond";
+	src:url("fonts/AppleGaramond.ttf");
+}
+.Garamond{
+	font-family: "Garamond";
+}
+
+body{
+	background-color: #fafafa;
+}
+
+#ThumbPic{
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-left: 15px;
+	background-size: 170px;
+	float: left;
+}
+
+#UserPicture{
+	background:url("img/MyProfilePicture.jpg");
+	overflow: hidden;
+	background-size: 170px 120px;
+	width: 170px;
+	height: 120px;
+	margin-top: 40px;
+	background-position: relative;
+}
+
+#Abstract{
+	height:auto;
+	width:700px;
+	margin-top: -570px;
+	margin-left: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: center;
+}
+
+#MyAbstract{
+	min-height: 50px;
+	height: auto;
+	width:660px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: center;
+
+
+}
+
+#txtAbstract{
+	text-align: justify;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: solid;
+	margin-top: -10px;
+	border-width: 1px;
+	margin-bottom: 47px;
+	background-color: white;
+}
+
+.Vittae{
+	margin-top: -10px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+	background-color: white;
+	font-family: Garamond;	
+	font-size: 15pt;
+}
+
+.stepVittae{
+	font-size: 18pt;
+	font-family: Garamond;
+}
+
+.lblVittae{
+	 margin-left: 30px;
+}
+
+	

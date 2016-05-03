@@ -1,8 +1,9 @@
 <?php 
 
-    if(file_exists("SqlQuery.php")){
-            include("SqlQuery.php");
-        }
+    if(file_exists("SqlQuery.php"))
+        include("SqlQuery.php");
+    if (file_exists("User.class.php")) 
+        include("User.class.php");
 
     else{
         $errorMsg = "<center><font color='#FF0000'><b>";
@@ -13,32 +14,39 @@
         exit;
     }
 
-	$name = $_POST['name'];
-	$lastname = $_POST['lastname'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$passConf = $_POST['passwordConfirm'];
+    $name = $_POST['name'];
+    $lastname = $_POST['lastname'];
 
-    if ($name == "" || $lastname == "" || $email == "" || $password == "" || $passConf == ""){
+    $_USER = new User($name." ".$lastname, $_POST['email'], $_POST['password'], 
+                        $_POST['passwordConfirm'], $_POST['street'], $_POST['number'], 
+                        $_POST['complement'], $_POST['neighborhood'], $_POST['city'], 
+                        $_POST['state'], $_POST['country'], $_POST['zipCode'], $_POST['phone']);
+
+
+    if ($_USER->ContainsEmptyValue()){
         echo "<center>Existem campos que não foram informados</center>";
         echo "<center><input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
     }
     
-    else if($password != $passConf){
-        echo "<center>As senhas estão diferentes</center>";
-        echo "<center><input type = 'button' value = 'Back'";
-        echo " name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
-   
-   }else{
+    else if($_USER->password != $_USER->passConf){
+        
+        echo "<center>As senhas estão diferentes</center>".
+            "<center><input type = 'button' value = 'Back'".
+            " name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
+   }
 
-        $Query = "insert into logins(name,lastname,email,password) values('$name','$lastname','$email', '$password')";
+   else{
+        $Result = $_USER->Address->DataBaseInsertAddress();
 
-        $Result = SqlExec($Query);
+        $Result = $_USER->DataBaseInsertUser();
+
+
      
-
         if ($Result){
-        echo "<center>Cadastro efetuado com sucesso!</center>";
-        echo "<center><input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
+
+            echo "<center>Cadastro efetuado com sucesso!</center>".
+                 "<center><input type = 'button' value = 'Back'".
+                 " name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
         }
     }
 
