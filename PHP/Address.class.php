@@ -11,9 +11,11 @@
         public $country;
         public $zipCode;
 
-        public function Address($street,$number,
-                    $complement,$neighborhood,$city,
-                    $state,$country,$zipCode){
+        public function Address(
+            $street, $number,
+            $complement, $neighborhood, $city,
+            $state, $country, $zipCode
+        ){
 
             $this->street = $street;
             $this->number = $number;
@@ -28,21 +30,23 @@
         function ContainsEmptyValue(){
 
             if(empty($this->street)  ||  empty($this->number)  || empty($this->city)  ||
-                    empty($this->neighborhood)  ||empty($this->state)  || 
-                    empty($this->country) || empty($this->zipCode))
+               empty($this->neighborhood)  ||empty($this->state)  || 
+               empty($this->country) || empty($this->zipCode))
                 return true;
+            
             return false;
         }
 
         function IsAlreadyInDatabase(){
-
+            
             $Query = "select idAddress from addresses where zipCode = '".$this->zipCode.
                 "' and number = '".$this->number. "' and country = '".$this->country."'";
 
-                $Result = SqlExec($Query);
-                $Result = pg_fetch_array($Result);
+            $Result = SqlExec($Query);
+          
+            $Result = pg_fetch_array($Result);
 
-                return ($Result) ? true : false;
+            return ($Result) ? true : false;
         }
 
         function GetIdAddress(){
@@ -58,7 +62,9 @@
 
         function DataBaseInsertAddress(){
 
+
             if(!$this->IsAlreadyInDatabase()){
+            
 
                 $Query =  "insert into addresses(street, number, neighborhood, 
                             city, state, complement, zipCode, country)".

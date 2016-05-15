@@ -18,11 +18,22 @@
 
 		<div id = "loginBar">
 			<form id = "frmLogin" method="post" action = "PHP/LoginAuthenticate.php">
-				<label>Login: </label>
-				<input type="email" name="lgEmail" placeholder="nome@provedor.com" class = "LoginInputs">
-				<label>Senha: </label>
-				<input type="password" maxlength = "16" name="lgPassword" placeholder="Digite sua senha" class = "LoginInputs">
-				<input type="submit" value="Entrar" id = "btnLogin">
+				<table>
+				<tr>
+					<td>
+						
+						<input type="email" id = "lgEmail" name="lgEmail" placeholder="Digite o seu Email" class = "LoginInputs Inputs">
+					</td>
+					<td>
+						<input type="password" id = "lgPassword	" maxlength = "16" name="lgPassword" placeholder="Digite sua senha" class = "LoginInputs Inputs">
+					</td>
+					<td>
+						<input type="submit" value="Entrar" id = "btnLogin" class = "buttons">
+					</td>	
+				</tr>
+				
+			
+				</table>
 			</form>
 		</div>
 		
@@ -47,10 +58,10 @@
 					</tr>
 					<tr>
 						<td>
-							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpMidInputs">
+							<input id = "name" name = "name" type= "text" placeholder="Nome" class = "SignUpMidInputs Inputs">
 						</td>
 						<td>
-							<input id = "lastName" name = "lastName" type= "text" placeholder = "Sobrenome" class = "SignUpMidInputs">
+							<input id = "lastName" name = "lastName" type= "text" placeholder = "Sobrenome" class = "SignUpMidInputs Inputs">
 						</td>
 					</tr>	
 					<tr>
@@ -58,7 +69,7 @@
 					</tr>
 					<tr>
 						<td colspan = "2">
-							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs">
+							<input id = "email" name = "email" type = "email" placeholder="email@provedor.com" class = "SignUpInputs Inputs">
 						</td>
 					</tr>
 					<tr>
@@ -66,7 +77,7 @@
 					</tr>
 					<tr>
 						<td colspan = "2" >
-							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="Senha" class = "SignUpInputs">
+							<input id = "password" name = "password" type = "password" maxlength = "16" placeholder="Senha" class = "SignUpInputs Inputs">
 						</td>
 					</tr>
 					<tr>
@@ -74,13 +85,13 @@
 					</tr>
 					<tr>
 						<td colspan = "2" >
-							<input id = "passwordConf" name = "passwordConf" type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs">
+							<input id = "passwordConf" name = "passwordConf" type = "password" maxlength = "16" placeholder="Confirmação de Senha" class = "SignUpInputs Inputs">
 						</td>
 					</tr>
 					
 					<tr>
 						<td colspan = "2">
-							<input id = "btnSignUp" name = "btnSignUp" type="submit" value="Cadastre-se">
+							<input id = "btnSignUp" class = "buttons" name = "btnSignUp" type="submit" value="Cadastre-se">
 						</td>
 					</tr>
 				</table>

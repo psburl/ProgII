@@ -2,15 +2,20 @@
 
     if(file_exists("SqlQuery.php"))
         include("SqlQuery.php");
+
     if (file_exists("User.class.php")) 
         include("User.class.php");
 
     else{
-        $errorMsg = "<center><font color='#FF0000'><b>";
-        $errorMsg.= "Não foi possível executar a ação no Banco de Dados.<br>";
-        $errorMsg.= "O arquivo SqlQuerys não foi encontrado.";
-        $errorMsg.= "</b></font></center>";
-        echo "<br><br>".$errorMsg;
+        
+        $errorMsg = "<center>".
+                        "<font color='#FF0000'>".
+                            "Não foi possível executar a ação no Banco de Dados.<br>".
+                            "O arquivo SqlQuerys não foi encontrado.".
+                        "</font>".
+                    "</center>";
+        
+        echo $errorMsg;
         exit;
     }
 
@@ -24,29 +29,33 @@
 
 
     if ($_USER->ContainsEmptyValue()){
-        echo "<center>Existem campos que não foram informados</center>";
-        echo "<center><input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
+        
+        echo "<center>".
+                "Existem campos que não foram informados".
+                "<input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'>".
+            "</center>";
     }
     
     else if($_USER->password != $_USER->passConf){
         
-        echo "<center>As senhas estão diferentes</center>".
-            "<center><input type = 'button' value = 'Back'".
-            " name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
+        echo "<center>".
+                "As senhas estão diferentes".
+                "<input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'>".
+            "</center>";
    }
 
    else{
-        $Result = $_USER->Address->DataBaseInsertAddress();
 
+        $Result = $_USER->Address->DataBaseInsertAddress();
+      
         $Result = $_USER->DataBaseInsertUser();
 
-
-     
         if ($Result){
 
-            echo "<center>Cadastro efetuado com sucesso!</center>".
-                 "<center><input type = 'button' value = 'Back'".
-                 " name = 'btnBack' Onclick = 'javascript:history.go(-1)'></center>";
+            echo "<center>".
+                    "Cadastro efetuado com sucesso!".
+                    "<input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'>".
+                "</center>";
         }
     }
 

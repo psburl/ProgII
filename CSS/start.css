@@ -1,6 +1,6 @@
 @font-face{
 	font-family: "Garamond";
-	src:url("fonts/AppleGaramond.ttf");
+	src:url("fonts/Myriad-Pro-Light.ttf");
 }
 .Garamond{
 	font-family: "Garamond";
@@ -8,6 +8,15 @@
 
 body{
 	background-color: #fafafa;
+}
+
+.ui-datepicker {
+    height: auto;
+    padding: 0.2em 0.2em 0;
+    width: 205px;
+    font-size: 16px;
+	font-family: Garamond;
+	color:black;
 }
 
 #frmLogin{
@@ -79,17 +88,18 @@ body{
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	margin-left: 7px;
+	margin-top: 15px;
 	float: left;
 }
 
 #UserName{
 	width:170px;
-	height: 30px;
+	height: 20px;
 	float: left;
 	text-align: center;
-	font: Garamond;
+	font-family: Garamond;
 	font-size: 14pt;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 	margin-left: 15px;
 }
@@ -108,6 +118,7 @@ body{
 
 #FeedArea{
 	height:auto;
+	margin-top: 20px;
 	width:700px;
 	margin-top: -570px;
 	margin-left: 200px;
@@ -116,8 +127,20 @@ body{
 	float: center;
 }
 
-#TypefulTextArea{
-	height:150px;
+#fixButton{
+	padding-top: 10px;
+	width:660px;
+	height: 40px;
+	margin-left: 20px;
+	background-color: transparent;
+	border-bottom:solid;
+	border-width: thin; 
+	border-color: #A0A0A0;
+	float: center;
+}
+
+#TypeTaskArea{
+	height: auto;
 	width:660px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
@@ -125,40 +148,170 @@ body{
 	border-bottom-right-radius: 2px;
 	margin-left: 20px;
 	float: center;
-	background-color: white;
-
+	display: none;
 }
 
-#FeedTextArea{
+#TypefulTextArea{
+	height:auto;
+	width:660px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-left: 20px;
+	float: center;
+	display: none;
+}
+
+
+.FeedMiddleTextArea{
 	resize: none;
-	width: 640px;
-	height: 100px;
-	margin-left: 5px;
-	margin-top: 5px;
+	width: 210px;
+	height: 20px;
+	margin-bottom: 5px;
+	margin-left: 395px;
 	background-color: white;
 	border: none;
 	border-bottom:solid; 
 	border-top: solid;
 	border-width: thin;
 	border-color: #D3D3D3;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
 	padding-top:5px;
 }
-
-#btnPin{
-	background-color: #287bbc;
+.FeedTextArea{
+	resize: none;
+	width: 620px;
+	height: 100px;
+	margin-left: -5px;
+	margin-bottom: 5px;
+	background-color: white;
+	border: none;
+	border-bottom:solid; 
+	border-top: solid;
+	border-width: thin;
+	border-color: #D3D3D3;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	padding-top:5px;
+}
+.fixesbuttons{
+	background-color: transparent;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
-	padding-bottom: 2px;
-	font-size: 11pt;
-	color: white;
+	font-size: 14pt;
+	color: #050505;
 	height: 22px;
-	width: 60px;
+	width: 80px;
 	border:none;
-	margin-top: 5px;
-	margin-left: 585px;
+	margin-top: 15px;
+	float: center;
+	font-family: Garamond;
+
 }
+
+.buttons{
+	border:solid; 
+	border-width: thin;
+	text-align: right;
+	font-size: 16px;
+	font-family: Garamond;
+	background-color: transparent;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:black;
+	border-color: #D3D3D3;
+}
+
+#btnNewTask{
+	margin-left: 570px;
+	margin-top: 15px;
+}
+
+#btnNewReminder{
+	margin-left: 570px;
+	margin-top: 15px;
+}
+
+#btnReminder{
+	margin-left: 480px;
+
+}
+
+#btnTask{
+	border-left: solid;
+	border-width: thin;
+	border-color: #A0A0A0;
+}
+
+#FormTask{
+	background-color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+
+#FormReminder{
+	background-color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.lblNewPost{
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	margin-top: 20px;	
+}
+
+.lblNewPostMiddle{
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	margin-top: 20px;
+	padding-left: 400px;
+	padding-top: 10px;
+}
+
+.TxtTitles{
+	resize: none;
+	width: 620px;
+	height: 20px;
+	margin-bottom: 5px;
+	margin-left: -5px;
+	background-color: white;
+	border: none;
+	border-bottom:solid; 
+	border-top: solid;
+	border-width: thin;
+	border-color: #D3D3D3;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	padding-top:5px;
+}
+
+.lblNew{
+	border-top:solid; 
+	border-width: thin;
+	text-align: right;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	border-color: #D3D3D3;
+}
+
 
 #PostFeed{
 	min-height: 50px;
@@ -169,7 +322,7 @@ body{
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: -5px;
 	float: center;
 	background-color: white;
 }

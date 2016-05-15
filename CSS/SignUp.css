@@ -1,54 +1,74 @@
 @font-face{
-	font-family: "GaramondLight";
-	src:url("fonts/AppleGaramond-light.ttf");
+	font-family: "Garamond";
+	src:url("fonts/Myriad-Pro-Light.ttf");
+}
+.Garamond{
+	font-family: "Garamond";
 }
 
-.Garamond{ font-family: "GaramondLight"; }
-
 table{
-	font-size: 14pt;
-	font-weight: bold;
+	font-family: Garamond;
 	margin: auto;
 }
 
-#SignUpBox{
+.buttons{
+	border:solid; 
+	border-width: thin;
+	text-align: right;
+	font-size: 16px;
 	font-family: Garamond;
+	background-color: transparent;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:black;
+	border-color: #050505;
+}
+
+.Inputs{
+	resize: none;
+	margin-left: 15px;
+	background-color: white;
+	border: none;
+	border-bottom:solid; 
+	border-top: solid;
+	border-width: thin;
+	border-color: #A0A0A0;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+	padding-top:5px;
+}
+
+
+#SignUpBox{
 	width: 550px;
-	height: 1000px;
+	height: 600px;
 	margin: auto;
 	margin-top: 30px;
 	float: center;
 	text-align: center;
 	margin-bottom: 60px;
-	background-color: #287bbc;
-	opacity: 0.9;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	box-shadow: 5px 5px 5px #08648e;
+	background-color: transparent;
 	padding-top: 15px;
-}
-
-.SignUpMidLabels{
-	font-family: Garamond;
-	font-size:14pt;
-	float:left;
-	width: 80%;
-	margin-left: -180px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: solid;
+	border-right: solid;
+	border-width: thin; 
+	border-color: #A0A0A0;
 }
 
 .SignUpLabels{
-	font-family: Garamond;
-	font-size:14pt;
-	float:left;
+	padding-left: 15px;
+	font-size: 14pt;
+	padding-top: 5px;
 
 }
 
 #frmSignUp input[type=text].error{
     border: solid 1px #900; 
-
-   
 }
 
 label.error {
@@ -60,19 +80,16 @@ label.error {
     padding-left: 15px;
 }
 
+.Full{
+	width: 500px;
+}
 
-.required{
-	font-family: Garamond;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	float:center;
-	width : 500px;
-	font-size:16pt;
-	border-style:none;
-	margin-top: 5px;
+.Mid{
+	width: 240px;
+}
 
+.lbl2{
+	margin-right: 100px;
 }
 
 #Logo img{
@@ -86,19 +103,11 @@ label.error {
 }
 
 #LoginButton{
-	font-family: Garamond;
-	width:300px;
-	height: 30px;
-	margin-top: 60px;
-	border: 0.5px;
+	width:240px;
+	margin-top: 40px;
 	border-style: solid;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 	float:right;
-	font-size: 11pt;
-	font-weight: bold;
-	background-color: #287bbc;
+	text-align: center;
+	font-size: 14pt;1
 }
 

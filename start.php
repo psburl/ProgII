@@ -6,14 +6,18 @@
 		<meta charset = "utf-8"/>
 		<script type="text/javascript" src="JS/jquery-2.2.1.js"></script>
 		<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
-		<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
-
+		<script type="text/javascript" src="JS/hideDisplay.js"></script>
+		<script type="text/javascript" src="JS/calendary.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
 		<link rel="stylesheet" type="text/css" href="CSS/start.css">
 		<link rel="icon" type="image/x-icon" href="img/Icon.ico">
 	</head>
 	<?php
 		session_start();
-		$Result  = $_SESSION['Result'];
+		$Result  = ($_SESSION['Result']) ? $_SESSION['Result'] : "";
+
 	?>
 	
 	<body>
@@ -24,17 +28,82 @@
 				</div>
 				<div id = "UserName" name = "UserName">
 					<?php 
-						echo $Result[3]; 
+						echo $Result['3'];
+							
 					?>
 				</div>
 				<div id = "FriendPanel"></div>
 			</div>
 			<div id = "FeedArea">
-				<div id = "TypefulTextArea">
-					<textarea id = "FeedTextArea"></textarea> 
-					<input type="submit" value="Fixar" id = "btnPin">
+				<div id = "fixButton">
+					<input type="submit" value="Lembrete" class = "fixesbuttons" id = "btnReminder">
+					<input type="submit" value="Tarefa"  class = "fixesbuttons" id = "btnTask">
 				</div>
-				<div id = "PostFeed"></div>
+				<div id = "TypefulTextArea">
+					<form id = "FormReminder">
+						<table>
+							<tr>
+								<td colspan="2" class = "lblNew">Novo Lembrete</td>
+							</tr>
+							<tr>
+								<td colspan="2" class = "lblNewPost">Lembrete:</td>
+							</tr>	
+							<tr>
+								<td colspan="2">
+									<textarea id = "taskDescription" name = "taskDescription" class = "FeedTextArea" placeholder="Digite aqui o que deseja lembrar!"></textarea>
+								</td>
+							</tr>
+						</table>
+						<input type = "submit" id = "btnNewReminder" name "btnNewReminder" class = "buttons" value = "Criar"/>
+					</form>
+					<div id = "PostFeed"></div>
+				</div>
+				<div id = "TypeTaskArea">
+					<form id = "FormTask">
+						<table>
+							<tr>
+								<td colspan="2" class = "lblNew" >Nova Tarefa</td>
+							</tr>
+							<tr>
+								<td colspan="2" class = "lblNewPost">Título:</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea id = "taskTitle" name = "taskTitle" class = "TxtTitles" placeholder="Digite aqui o título de sua nova tarefa."></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class = "lblNewPost">Descrição:</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea id = "taskDescription" name = "taskDescription" class = "FeedTextArea" placeholder="Digite aqui a descrição de sua nova tarefa."></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class = "lblNewPostMiddle">Data:</td>
+							</tr>
+							<tr>
+								<td>
+									<input type= "text" name= "data" id = "data" class = "FeedMiddleTextArea" placeholder="Clique para adicionar uma data."  size="10" maxlength="10"/>
+								</td>
+							</tr>	
+							<tr>
+								<td colspan="2" class = "lblNewPost">Local:</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea id = "taskLocal" name = "taskLocal" class = "TxtTitles" placeholder="Digite aqui, se necessário, o local de sua nova tarefa."></textarea>
+								</td>
+							</tr>
+
+						</table>
+							<input type = "submit" id = "btnNewTask" name "btnNewTask" class = "buttons" value = "Criar"/>	
+					</form>
+					<div id = "PostFeed"></div>
+				</div>
+				
+				
 			</div>
 		</div>
 		<div id = "UserStorage"></div>
