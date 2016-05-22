@@ -19,6 +19,10 @@ body{
 	color:black;
 }
 
+.menuimgconf{
+	background-size: 10px;
+}
+
 #frmLogin{
 	float: right;
 	width: 100%;
@@ -322,7 +326,6 @@ body{
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	margin-top: 20px;
-	margin-left: -5px;
 	float: center;
 	background-color: white;
 }
@@ -341,3 +344,138 @@ body{
 	margin-top: 30px;
 	position: fixed;
 }
+
+
+.TaskTitle{
+
+	resize: none;
+	width: 620px;
+	height: 20px;
+	margin-bottom: 5px;
+	margin-left: 400px;
+	background-color: white;
+	border: none;
+	border-bottom: solid;
+	border-width: thin;
+	border-color: #D3D3D3;
+	font-size: 18px;
+	font-family: Garamond;
+	font-style: bold;
+	text-align: center;
+	padding-right: 30px;
+	color:black;
+	padding-top:5px;
+	margin-bottom: 40px;
+}
+
+.TaskLabels{
+	padding-top: 30px;
+	padding-left: 20px;
+	font-size: 16px;
+	font-family: Garamond;
+	color:black;
+}
+
+
+.TaskDate{
+	padding-top: 0px;
+	padding-left: 20px;
+	font-size: 16px;
+	float: right;
+	font-family: Garamond;
+	color:black;
+}
+
+#AddInStorage{
+	position: fixed;
+	width:200px;
+	height: 30px;
+	bottom: 0;
+}
+
+#btnAddNewFolder{
+	background-color: blue;
+	background: url("img/Folder-icon.png");
+	background-size: 30px;
+	width:30px;
+	height: 30px;
+	right: 0;
+	position: fixed;
+}
+
+#btnAddNewFile{
+	background-color: red;
+	width: 170px;
+	height: 30px;
+	float: left;
+	position: fixed;
+}
+
+#btnNewFolder{
+	width:50px;
+	height: 30px;
+	border-style: none;
+	background: transparent;
+}
+
+#btnNewFolder:hover{
+	border-style: none;
+}
+
+.menuTaskOptions{
+	list-style-type: none;
+	font-size: 14px;
+	font-family: Garamond;
+	text-align: center;
+}
+
+.menuimgconf{
+	position: relative;
+	float: right;
+}
+
+.menuimgconf:hover ul, 
+.menuimgconf.over ul, 
+.menuimgconf ul li.over ul {
+	display: block;
+}
+
+
+.taskOption{
+	position: relative;
+	float: right;
+	width: 80px;
+	border-bottom: solid;
+	border-top: solid;
+	border-width: thin;
+	border-color: #D3D3D3;
+	background-color: white	;
+	margin-top: -1px;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.taskOption:hover{
+	background-color: #D3D3D3;
+	color: white;
+}
+
+.ListTaskOptions{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	display: none;
+	margin-left: -100px;
+	margin-top: -5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+.menuTaskOptions li a:link, .menuTaskOptions li a:visited, .menuTaskOptions li a:active{
+	color: black;
+	text-decoration: none;
+}
+	
+

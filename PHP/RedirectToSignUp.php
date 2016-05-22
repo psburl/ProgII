@@ -11,5 +11,3 @@
 
     header("Location: /../SignUp.html");
 
-
-    $_PUT['name'] = "oi";

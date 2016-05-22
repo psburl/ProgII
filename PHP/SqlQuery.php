@@ -1,10 +1,11 @@
 <?php 
 	function SqlExec($Query){
 
-		if(file_exists("DB_Connect.php")){
+		if(file_exists("DB_Connect.php"))
 			include("DB_Connect.php");
 		
-		}
+		else if(file_exists("PHP/DB_Connect.php"))
+			include("PHP/DB_Connect.php");
 
 		else{
 

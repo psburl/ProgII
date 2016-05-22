@@ -20,6 +20,7 @@
 		session_start( );
 
 		$_SESSION['Result'] = $Result;
+		$_SESSION['email'] = $email;
 
-		header( "location: /../start.php");
+		header( "location: ../start.php");
 	}
