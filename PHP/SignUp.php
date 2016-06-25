@@ -52,6 +52,19 @@
 
         if ($Result){
 
+            $email = $_POST['email'];
+
+            $Query = "insert into userStorage(email, filepath) values ('$email' ,'/var/www/html/ProgII/files/')";
+            $Result = SqlExec($Query);
+
+            $Query = "SELECT * FROM userStorage WHERE email = '$email'";
+            $Result =  SqlExec($Query);
+            $Result = pg_fetch_array($Result);
+            
+            echo $Result[0];
+            $dir = '/var/www/html/ProgII/files/'.$Result[0];
+            mkdir($dir, 0777);
+
             echo "<center>".
                     "Cadastro efetuado com sucesso!".
                     "<input type = 'button' value = 'Back' name = 'btnBack' Onclick = 'javascript:history.go(-1)'>".

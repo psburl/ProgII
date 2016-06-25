@@ -1,4 +1,4 @@
-$(document).ready(function(){
+x	$(document).ready(function(){
 
 	$("#btnReminder").click(function(){
 
@@ -29,9 +29,21 @@ $(document).ready(function(){
 			$("#TypeTaskArea").hide("slow");
 			document.getElementById("btnTask").value = "Tarefa";
 		}
-
-
 	});
 
 
+	$("#showMUS").click(function(){
+
+		$("#maximizedUserStorage").show("fast");
+		$("#minimizedUserStorage").hide("fast");
+
+	});
+
+	$("#closeMUS").click(function(){
+
+		$("#maximizedUserStorage").hide("fast");
+		$("#minimizedUserStorage").show("fast");
+
+	});
+	
 });	
